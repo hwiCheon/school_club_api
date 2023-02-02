@@ -42,6 +42,10 @@ app.post("/fetch", async (req, res) => {
   res.send(await fetchMemberData());
 });
 
+app.get("/", (req,res) => {
+  res.send(true);
+});
+
 app.listen(port, () => {
   console.log(`server open at ${process.env.PORT}`);
 });
