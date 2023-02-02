@@ -30,7 +30,6 @@ mongoose.set("strictQuery", false);
 mongooseConnect(url);
 
 app.post("/signup", async (req, res) => {
-  console.log(req.body);
   if (await createMemberData(req.body)) {
     res.send(true);
   } else {
