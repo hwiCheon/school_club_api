@@ -23,7 +23,7 @@ app.use(
 
 const { MONGODB_URI } = process.env;
 
-const port = PORT || 3005;
+const port = 3005;
 const url = MONGODB_URI || "mongodb://localhost/visitor-app";
 
 mongoose.set("strictQuery", false);
